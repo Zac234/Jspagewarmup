@@ -65,3 +65,5 @@ Change your variable card to now be called cards. Change the value to be an arra
 
 Create a loop that will loop through each object in your array and in the loop: 
   Use the same techniques as above to create a new card that appears on the page for each object.
+Research the built in function addEventListener() and see if you can use JS to change the background color of the page when the space bar is pressed:
+  https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
