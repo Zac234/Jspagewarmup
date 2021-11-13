@@ -1,0 +1,67 @@
+Navigate to your Scratch directory inside your InnoTech directory
+Create a folder called 'JsPageWarmup' and go into this folder
+Initialize this folder as a git repo
+
+Create a file called index.html
+Create folders called css, images, pages, and js
+Create a file called app.js in the js folder
+
+In the index.html file add the boilerplate code using the VSCode shortcut
+Connect to your JS file in your HTML code
+Set up the debugger to connect to your JS file.
+
+Create a git commit at this point outlining what you have done
+
+Using your knowledge of JS & HTML, implement the following:
+Create a page that contains a few elements with id's and classes (p tags, h tags, a tags, all kinds of tags)
+Use the function document.getElementById() 3 times to get 3 different elements from the page and store them in their own variables
+Change the style of all 3 of those tags to anything you like (modify the color, font-family, etc.)
+
+Use the function document.getElementsByClassName() to grab all tags with a class name of your choice and store the result in a variable
+Create a loop that goes through all elements in your variable and changes the innerText to be something random (just come up with something)
+
+Make an appropriate git commit
+Connect this local repo to a remote repo and push your code
+
+
+Using only HTML & CSS, implement a simple card. This can be as simple as an image with a title under the image.
+  Make sure you wrap the card in a container that you will be able to add more cards to later!
+  Please use classes to style the card! If you use id's, you will not be able to add more cards later!
+  Don't over complicate the HTML here, it really is as simple as:
+  <section id="card_section">
+    <article class="card_container">
+      <img src="link_to_an_external_image">
+      <h1>Card Title</h1>
+    </article>
+  </section>
+
+In your JS, create a variable called card and set it to an object. This object should contain two keys:
+  img_src: "link to the image"
+  title: "The title of the card"
+Please use an external link for the image (just to make things simple)
+Using the built in function document.getElementById() grab the parent container for all the cards (the section from the example HTML)
+  Store this container in a variable for later use.
+
+Using the built in function document.createElement(), create an article tag
+  Store this article in a variable for later use.
+Using this variable, give this article the class "card_container"
+
+Using the built in function document.createElement(), create an img tag
+  Store this img in a variable for later use.
+Using this variable, set the src of this image to the img_src stored in the object created before
+
+Using the built in function appendChild, append the img tag to the article tag created.
+
+Using the built in function document.createElement(), create an h1 tag.
+  Store this h1 in a variable for later use.
+Using this variable, change the innerText to be the title of the object created before.
+Using the built in function appendChild, append the h1 tag to the article tag created.
+
+Using the built in function appendChild, append the article tag to the parent container grabbed at the start of this.
+You should now see the new card appear on the page.
+
+Change your variable card to now be called cards. Change the value to be an array of objects instead of just one object.
+  Make each object have the same keys but give each card a different img_src and title value.
+
+Create a loop that will loop through each object in your array and in the loop: 
+  Use the same techniques as above to create a new card that appears on the page for each object.
